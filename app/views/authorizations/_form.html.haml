@@ -1,0 +1,14 @@
+= simple_form_for(@authorization) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :user_id
+    = f.input :provider
+    = f.input :uid
+    = f.input :token
+    = f.input :secret
+    = f.input :fresh_token
+    = f.input :settings
+
+  .form-actions
+    = f.button :submit
